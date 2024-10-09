@@ -93,7 +93,7 @@ JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 #url links
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'instantlinks.co')
 SHORTLINK_API = environ.get('SHORTLINK_API', '645ea7db843cb1a5977267341cf8adb1873675f5')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 
 #Openai
 AI = is_enabled((environ.get("AI","True")), True)
